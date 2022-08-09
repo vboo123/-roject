@@ -1,3 +1,11 @@
+const { Console } = require("console");
+// get fs module for creating write streams
+const fs = require("fs");
+
+// make a new logger
+const myLogger = new Console({
+  stdout: fs.createWriteStream("normalStdout.txt"),
+});
 //@ts-check
 const CosmosClient = require('@azure/cosmos').CosmosClient
 
@@ -33,6 +41,10 @@ async function createDatabase() {
  * Read the database definition
  */
 async function readDatabase() {
+  //log if succesfully connected to cosmosDB
+  myLogger.log(await client
+    .database(databaseId)
+    .read())
   const { resource: databaseDefinition } = await client
     .database(databaseId)
     .read()

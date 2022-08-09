@@ -1,0 +1,64 @@
+DatabaseResponse {
+  resource: {
+    id: 'ToDoList',
+    _rid: 'rSoHAA==',
+    _self: 'dbs/rSoHAA==/',
+    _etag: '"00000800-0000-0700-0000-62e9b5c40000"',
+    _colls: 'colls/',
+    _users: 'users/',
+    _ts: 1659483588
+  },
+  headers: {
+    'cache-control': 'no-store, no-cache',
+    'content-location': 'https://vboodb-westus.documents.azure.com/dbs/ToDoList',
+    'content-type': 'application/json',
+    date: 'Tue, 09 Aug 2022 00:35:53 GMT',
+    etag: '"00000800-0000-0700-0000-62e9b5c40000"',
+    lsn: '20',
+    pragma: 'no-cache',
+    server: 'Microsoft-HTTPAPI/2.0',
+    'strict-transport-security': 'max-age=31536000',
+    'transfer-encoding': 'chunked',
+    'x-ms-activity-id': '28baa06d-b213-46b9-bdb3-dbe88b37dec6',
+    'x-ms-cosmos-item-llsn': '8',
+    'x-ms-cosmos-llsn': '20',
+    'x-ms-gatewayversion': 'version=2.14.0',
+    'x-ms-global-committed-lsn': '20',
+    'x-ms-item-lsn': '8',
+    'x-ms-last-state-change-utc': 'Tue, 02 Aug 2022 20:38:06.687 GMT',
+    'x-ms-number-of-read-regions': '0',
+    'x-ms-request-charge': '2',
+    'x-ms-request-duration-ms': '0.48',
+    'x-ms-resource-quota': 'databases=1000;',
+    'x-ms-resource-usage': 'databases=1;',
+    'x-ms-schemaversion': '1.14',
+    'x-ms-serviceversion': 'version=2.14.0.0',
+    'x-ms-session-token': '0:-1#20',
+    'x-ms-transport-request-id': '195318',
+    'x-ms-xp-role': '1',
+    'x-ms-throttle-retry-count': 0,
+    'x-ms-throttle-retry-wait-time-ms': 0
+  },
+  statusCode: 200,
+  substatus: undefined,
+  database: <ref *1> Database {
+    client: CosmosClient {
+      clientContext: [ClientContext],
+      databases: [Databases],
+      offers: [Offers]
+    },
+    id: 'ToDoList',
+    clientContext: ClientContext {
+      cosmosClientOptions: [Object],
+      globalEndpointManager: [GlobalEndpointManager],
+      connectionPolicy: [Object],
+      sessionContainer: [SessionContainer],
+      partitionKeyDefinitionCache: {}
+    },
+    containers: Containers {
+      database: [Circular *1],
+      clientContext: [ClientContext]
+    },
+    users: Users { database: [Circular *1], clientContext: [ClientContext] }
+  }
+}
